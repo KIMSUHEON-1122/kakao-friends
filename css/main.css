@@ -484,7 +484,7 @@ article .box {
   font-weight: 600;
 }
 .banner{
-  padding: 0px 0px 16px 0px;
+  padding: 0px 0px 0px 14px;
   border-radius: 8px;
 }
 .banner a{
