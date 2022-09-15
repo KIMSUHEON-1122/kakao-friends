@@ -1,0 +1,571 @@
+@charset "UTF-8";
+
+body {}
+
+.ico_friends {
+  display: block;
+  background: url(../img/ico_friends.png) no-repeat 0 0 / 700px 800px;
+  font-size: 1px;
+  color: transparent;
+  overflow: hidden;
+}
+
+.ico_dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ec4217;
+  border-radius: 50%;
+  border: 2px solid #fff;
+
+  font-size: 1px;
+  color: transparent;
+  line-height: 0;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+#container {
+  max-width: 640px;
+  min-width: 270px;
+  height: 2000px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, #fff 40%, #f7e8e2 75%, #f7dcdc);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 640px;
+  min-width: 270px;
+  margin: 0 auto;
+  background: white;
+}
+
+h1 {
+  text-align: center;
+  height: 46px;
+  line-height: 46px;
+}
+
+h1 a {
+  display: inline-block;
+  width: 147px;
+  height: 24px;
+  background-image: url('../img/logo_kakaofriends.png');
+  background-size: 147px 24px;
+}
+
+h1 a span {
+  display: none;
+}
+
+.top_left .ico_gnb_menu {
+  width: 24px;
+  height: 24px;
+  background-position: -520px -60px;
+}
+
+.top_left,
+.top_right {
+  position: absolute;
+  top: 6px;
+}
+
+.top_left {
+  left: 12px;
+}
+
+.top_left>button {
+  padding: 5px;
+}
+
+.top_left .ico_dot {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  font-size: 1px;
+  color: transparent;
+  line-height: 0;
+}
+
+.top_right {
+  right: 12px;
+}
+
+.top_right>button {
+  padding: 5px;
+}
+
+.top_right .ico_search,
+.ico_grobal {
+  width: 24px;
+  height: 24px;
+}
+
+.top_right .ico_search {
+  background-position: -40px -20px;
+}
+
+.top_right .ico_grobal {
+  background-position: -440px -60px;
+
+}
+
+nav {
+  border-bottom: 1px solid #e3e5e8;
+}
+
+.list_tab {
+  display: flex;
+}
+
+.list_tab li {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.list_tab li a {
+  display: block;
+  line-height: 43px;
+}
+
+.list_tab li a>span {
+  position: relative;
+}
+
+nav .ico_dot {
+  position: absolute;
+  right: -13px;
+  top: 0px;
+  font-size: 1px;
+  color: transparent;
+}
+
+.list_tab li a.on {
+  font-weight: bold;
+}
+
+.list_tab li a.on::after {
+  display: block;
+  content: "";
+  height: 4px;
+  background-color: black;
+  position: relative;
+  bottom: -1px;
+}
+
+/* main */
+main {
+  padding-top: 95px;
+}
+
+article {}
+
+article .box {
+  padding: 20px;
+
+}
+
+.article_header {
+  padding-bottom: 15px;
+}
+
+.article_header .profile {
+  float: left;
+  background: url('../img/img1.kakaocdn.png') no-repeat 0 / 40px 40px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: cover;
+  text-indent: -9999px;
+  border-radius: 15px;
+}
+
+.article_header .info {
+  padding-left: 45px;
+}
+
+.article_header .info strong {}
+
+.article_header .info .txt_time {
+  display: block;
+  font-size: 13px;
+  color: #909092;
+  line-height: 15px;
+}
+
+.article_con {}
+
+.article_con img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* gnb */
+.dark{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 100;
+  display: none;
+
+}
+#gnb {
+  position: fixed;
+  top: 0;
+  left: -304px;
+  bottom: 0px;
+  width: 304px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 150;
+}
+
+#gnb .inner {
+  width: 304px;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 17px;
+  /* 스크롤바의 넓이 */
+  box-sizing: content-box;
+}
+
+.info_user {
+  padding: 30px 0px 24px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#gnb .inner .info_user {}
+
+.info_login {
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.info_inquire {
+  font-size: 13px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.ico_arrow_right {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-position: -320px 0;
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+.list_menu {
+  padding: 20px 0;
+
+}
+
+.list_menu>li {}
+
+.list_menu .btn_menu {
+  display: block;
+  line-height: 48px;
+  padding: 0 10px 0 24px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+
+.line::after{
+  display: block;
+  content: "";
+  border-bottom: 1px solid #dfdfe2;
+  width: 304px;
+  height: 17px;
+  margin-bottom: 16px;
+}
+
+.list_menu .ico_dot {
+  position: relative;
+  bottom: 15px;
+}
+
+.list_menu .ico_arrow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-position: -360px 0;
+  float: right;
+  margin-top: 15px
+}
+
+.list_menu .on {
+  background-position: -340px 0;
+}
+
+.list_suv_wrap {
+  display: none;
+}
+
+.list_character {
+  padding: 16px 0 16px 14px;
+  font-size: 0;
+  /* 자식요소 inline-block 사용시 여백을 막아줌 */
+}
+
+.list_character li {
+  display: inline-block;
+  width: 25%;
+  padding-bottom : 20px;
+}
+
+.list_character li a {
+  display: block;
+  padding: 0 10px;
+}
+
+.img_character {
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  background: no-repeat 50% 50% /cover;
+  border-radius: 50%;
+}
+
+.txt_character {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  padding-top: 8px;
+  color: #818182;
+  font-weight: 600;
+}
+
+.character01 .img_character {
+  background-image: url(../img/character/character_20220531165251_96.png);
+}
+
+.character02 .img_character {
+  background-image: url(../img/character/character_20220531165311_96.png);
+}
+
+.character03 .img_character {
+  background-image: url(../img/character/character_20220531165333_96.png);
+
+}
+
+.character04 .img_character {
+  background-image: url(../img/character/character_20220531165353_96.png);
+
+}
+
+.character05 .img_character {
+  background-image: url(../img/character/character_20220531165418_96.png);
+
+}
+
+.character06 .img_character {
+  background-image: url(../img/character/character_20220531165457_96.png);
+
+}
+
+.character07 .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/new_store/prod/character/character_20220818170304_96.png);
+
+}
+
+.character08 .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/new_store/prod/character/character_20220818170326_off.png);
+
+}
+
+.character09 .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/prod/character/character_20220902083300_5c8d0d8b4a0746899f02bb00a8164e5e.png);
+
+}
+
+.character10 .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/prod/character/character_20220902083333_88bc2a0c82404615a3fcb5d32d1b401d.png);
+
+}
+
+.character11 .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/prod/character/character_20220902083414_e1462a8287ba434c842e2efbd6339586.png);
+
+}
+
+.character12 .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/prod/character/character_20220902083442_5d59dc403fe040939081f935c0f43fe2.png);
+}
+
+.character01:hover .img_character {
+  background-image: url(../img/character/character_20220531165245_96.png);
+}
+
+.character02:hover .img_character {
+  background-image: url(../img/character/character_20220531165306_96.png);
+}
+
+.character03:hover .img_character {
+  background-image: url(../img/character/character_20220531165329_96.png);
+
+}
+
+.character04:hover .img_character {
+  background-image: url(../img/character/character_20220531165349_96.png);
+
+}
+
+.character05:hover .img_character {
+  background-image: url(../img/character/character_20220531165413_96.png);
+
+}
+
+.character06:hover .img_character {
+  background-image: url(../img/character/character_20220531165452_96.png);
+
+}
+
+.character07:hover .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/new_store/prod/character/character_20220818170258_96.png);
+
+}
+
+.character08:hover .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/new_store/prod/character/character_20220818170322_on.jpg);
+
+}
+
+.character09:hover .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/prod/character/character_20220902083255_1259c308e0764d02a4d57c572c50fe95.png);
+
+}
+
+.character10:hover .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/prod/character/character_20220902083324_951886218fdf415f9ba9c5c14c5a902f.png);
+
+}
+
+.character11:hover .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/prod/character/character_20220902083409_ff6afad1d31f4af995142b054b48db29.png);
+
+}
+
+.character12:hover .img_character {
+  background-image: url(https://t1.kakaocdn.net/friends/prod/character/character_20220902083437_a380c0965e544dd9901b386e680c9834.png);
+}
+
+.list_category {
+  font-size: 0;
+  padding: 8px 10px 8px 24px;
+}
+
+.list_category li {
+  display: inline-block;
+  width: 50%;
+}
+
+.list_category a {
+  display: block;
+  font-size: 13px;
+  padding: 12px 0;
+  color: #818182;
+  font-weight: 600;
+}
+.banner{
+  padding: 0px 0px 16px 0px;
+  border-radius: 8px;
+}
+.banner a{
+  display: block;
+}
+.banner a img{
+  width: 100%;
+}
+.login{
+  margin-bottom: 30px;
+}
+.login a{
+display: block;
+text-align: center;
+padding: 25px;
+color: #818182;
+font-size: 13px;
+font-weight: 600;
+
+}
+.login .ico_gnb_lock{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-position: -560px -20px;
+  vertical-align: top;
+  margin-top: -2px;
+}
+.login_popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  background-color: white;
+  width: 310px;
+  z-index: 110;
+text-align: center;
+padding: 45px;
+  border-radius: 16px;
+  display: none;
+}
+.login_popup img{
+  width: 120px;
+}
+.login_popup strong{
+  display: block;
+  margin-top: 10px;
+  font-size: 17px;
+}
+.login_popup p{
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+.login_popup .btn_kakao{
+background-color: #ffeb00;
+padding: 10px;
+color: #3c1e1e;
+font-weight: 900;
+font-size: 15px;
+width: 100%;
+border-radius: 80px;
+margin-top: 15px;
+}
+.login_popup .ico_kakao{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-position: -480px -20px;
+  vertical-align: top;
+  margin-top: -2.5px;
+}
+.btn_close{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 15px;
+
+}
+.btn_close .ico_close{
+  width: 24px;
+  height: 24px;
+  background-position: 0 -20px;
+}
